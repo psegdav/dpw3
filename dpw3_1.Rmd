@@ -1,0 +1,31 @@
+---
+title: "R Markdown Presentation & Plotly: Using Iris Data"
+author: "psegdav"
+date: "April 3, 2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+```
+
+## Code for the graph
+
+
+Thank you for reviewing my work! I appreciate it :)!
+
+```{r, include=TRUE, comment=""}
+data("ToothGrowth")
+
+plot <- plot_ly(data = iris, x= ~Sepal.Length, y=~Sepal.Width, color = ~Species, mode="markers", type= "scatter")
+
+```
+
+## Sepal Length & Width according to Species
+
+```{r, include=TRUE, comment=""}
+plot
+```
+
+## Thank you! I hope you have a great day! :)
